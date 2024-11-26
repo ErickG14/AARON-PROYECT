@@ -1,5 +1,9 @@
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-<h1>Login error</h1>
+<?php include "header.php" ?>
+
+<h1>LOGIN FALLIDO! VUELVE A INTENTARLO...</h1>
 <div  >
     
         <form method="POST" action="logica/loguear.php">
@@ -14,3 +18,6 @@
         </form>
     
 </div>
+
+
+<?php include "footer.php" ?>

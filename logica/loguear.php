@@ -1,3 +1,6 @@
+ <!-- Compiled and minified CSS -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
 <?php
 require 'conexion.php';
 session_start();
@@ -9,7 +12,7 @@ $clave = $_POST['clave'];
 //La función COUNT devuelve el número de filas de la consulta, es decir, el número de registros que cumplen una determinada condición.
 
 //Los valores nulos no serán contabilizados
-$q = "SELECT COUNT(*) as contar from persona where no_cuenta= '$no_cuenta' and password = '$clave'";
+$q = "SELECT COUNT(*) as contar from alumno where no_cuenta= '$no_cuenta' and password = '$clave'";
 
 $consulta = mysqli_query($conexion, $q);
 
@@ -19,6 +22,7 @@ if ($array['contar'] > 0) {
 
     // en la variable session se guarda el numero de cuenta esto para poder acarrearla
     $_SESSION['usermane'] = $no_cuenta;
+    
 
     header("location: ../Principal.php");
     //header("location: ../inicio.php");

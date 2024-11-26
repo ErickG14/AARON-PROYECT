@@ -1,17 +1,21 @@
 <?php
-//2019
-//170 000 km 
-// trax
 
-// $host_db = "localhost";
-// $user_db = "id20310581_aaronico";
-// $pass_db = "Hw\&J=21JXiLsZ~<";
-// $db_name = "id20310581_test_php";
-$host_db = "localhost:3308";
-$user_db = "root";
-$pass_db = "123456";
-$db_name = "test_php";
+//$host_db = "localhost:3306";
+//$user_db = "root";
+//$pass_db = "YAZMIN1980";
+//$db_name = "fes_aragon";
 
+
+//$host_db = "sql311.infinityfree.com";
+//$user_db = "if0_37338714";
+//$pass_db = "Pdh8f0yPBOU3";
+//$db_name = "if0_37338714_fes_aragon";
+
+
+$host_db = "localhost:3306";
+$user_db = "huronmarron";
+$pass_db = "123456789";
+$db_name = "prueba_bd";
 
 $conexion = new mysqli($host_db,$user_db,$pass_db,$db_name);
 
